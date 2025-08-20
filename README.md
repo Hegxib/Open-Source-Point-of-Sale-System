@@ -150,6 +150,8 @@ _**Support me to keep this Repo Up-to-Date by Donating at :**_
 
 1. **KO-FI.COM :** https://ko-fi.com/hegxib 
 2. **CRYPTO ETH MetaMask: 0x83Cc0fe051bEf3c8D7633665F165fd9E1AFb10fC**
+
+
      **_make sure you sending ETH so it does not getLost forever_**
 
 **Send ETH via QR CODE instead :**
@@ -159,6 +161,7 @@ _**Support me to keep this Repo Up-to-Date by Donating at :**_
 
 
 ![HEGXIB](./assets/crypto/Hegxib-ETH-metamask-0x83Cc0fe051bEf3c8D7633665F165fd9E1AFb10fC.png)
+
 
 
 
