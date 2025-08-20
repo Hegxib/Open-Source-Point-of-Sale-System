@@ -1,80 +1,86 @@
-# Hegxib POS – Open Source Point of Sale System
+# Offline POS System
 
-**Hegxib POS** is a lightweight, offline Point of Sale system for PC. Perfect for small shops, supermarkets, or personal projects.  
-
----
+A complete offline Point of Sale system designed for barcode scanning via phone, inventory management, and sales recording.
 
 ## Features
 
-- Local database for products: name, serial number, quantity  
-- Automatic stock reduction on checkout  
-- Generate receipts for every order  
-- Works with phone scanner apps (barcode → PC)  
-- Modify or remove items in scanned item list  
-- Multiply item quantities easily  
-- Python-based scripts, easy to modify  
+- **Barcode Scanning**: Use your phone as a barcode scanner (HID input)
+- **Offline Database**: SQLite-based storage, no internet required
+- **Inventory Management**: Add, edit, delete products and manage stock
+- **Sales Recording**: Complete transaction logging with timestamps
+- **Real-time Cart**: Live cart updates with quantity management
+- **Stock Warnings**: Low stock alerts (below 5 units)
+- **Export Functionality**: Export inventory to CSV
 
----
+## Setup Instructions
 
-## Screenshots
+1. **Install Python 3.7+** (tkinter included)
 
-1. ![Screenshot 1](./screenshots/screen1.png)  
-2. ![Screenshot 2](./screenshots/screen2.png)  
-3. ![Screenshot 3](./screenshots/screen3.png)  
-4. ![Screenshot 4](./screenshots/screen4.png)  
+2. **Run the application**:
+   ```bash
+   python main.py
+   ```
 
+3. **Phone Setup**:
+   - Install a barcode scanner app that outputs as keyboard input
+   - Connect phone via USB/WiFi to computer
+   - Configure as HID device
+   - Scanned barcodes will appear in the barcode input field
 
----
+## Usage
 
-## Installation
+### Main POS Interface
+- **Barcode Field**: Auto-focused for phone scanner input
+- **Add Product**: Manual barcode entry or scan
+- **Shopping Cart**: Real-time display of scanned items
+- **Checkout**: Process sale and update inventory
 
-1. Install **Python 3.x** on your PC  
-2. Clone this repository:  
+### Inventory Management
+- Access via "Inventory Management" button
+- Add new products with barcode, name, price, stock
+- Edit existing products
+- Delete products
+- Export inventory to CSV
+- Stock level monitoring
+
+### Checkout Process
+1. Scan products (adds to cart automatically)
+2. Adjust quantities if needed
+3. Click "Checkout" to finalize sale
+4. Inventory automatically updated
+
+## Database Structure
+
+- **products**: barcode, name, price, stock
+- **sales**: timestamp, total_amount
+- **sale_items**: sale_id, product_id, quantity, subtotal
+
+## Files
+
+- `main.py`: Main POS interface
+- `database.py`: SQLite database operations
+- `inventory_manager.py`: Inventory management interface
+- `pos_system.db`: SQLite database (created automatically)
+
+## Phone Scanner Setup
+
+1. **Android**: Use "Barcode Scanner +" or similar apps with HID keyboard mode
+2. **iPhone**: Use "Scan" app or similar with keyboard output
+3. **Connection**: USB preferred for reliability, WiFi as alternative
+4. **Configuration**: Set scanner to send data as keyboard input with Enter/Return after each scan
+
+## Security Features
+
+- Admin access to inventory management
+- Local database backup capability
+- No network dependencies
+
+## Deployment
+
+To create standalone executable:
 ```bash
-git clone https://github.com/Hegxib/Open-Source-Point-of-Sale-System.git
-```
-3. Go to the project folder:
-```bash
-cd pos-system
-```
-4. Run the POS:
-```bash
-python main.py
+pip install pyinstaller
+pyinstaller --onefile --windowed main.py
 ```
 
-_**Executable file will be provided for non-technical users.**_
-
----
-
-# Usage
-
-- Add products with names, serial numbers, and quantity
-
-- Scan items using barcode scanner apps
-
-- Modify, remove, or multiply items in the list
-
-- Checkout and generate/print receipts
-
----
-
-# Contributing
-
-**You can contribute by:**
-
-- Submitting pull requests
-
-- Forking the repository
-
-- Contacting me on Discord, Telegram, or Email
-
-- Even beginners can fork the repo and make changes easily.
-
----
-
-# SUPPORT
-
-_**Support me to keep this Repo Up-to-Date by Donating at :**_
-
-1. **KO-FI.COM :** https://ko-fi.com/hegxib 
-2. **CRYPTO ETH MetaMask: 0x83Cc0fe051bEf3c8D7633665F165fd9E1AFb10fC**
+The system will run completely offline once deployed.

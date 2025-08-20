@@ -1,0 +1,5 @@
+# No external dependencies required - uses only Python standard library
+# tkinter - GUI framework (included with Python)
+# sqlite3 - Database (included with Python)
+# csv - CSV export (included with Python)
+# datetime - Timestamp handling (included with Python)
