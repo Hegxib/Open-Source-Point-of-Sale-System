@@ -31,7 +31,7 @@
 1. Install **Python 3.x** on your PC  
 2. Clone this repository:  
 ```bash
-git clone https://github.com/yourusername/pos-system.git
+git clone https://github.com/Hegxib/Open-Source-Point-of-Sale-System.git
 ```
 3. Go to the project folder:
 ```bash
