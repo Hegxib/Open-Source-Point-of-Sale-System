@@ -44,33 +44,37 @@ python main.py
 
 _**Executable file will be provided for non-technical users.**_
 
+---
+
 # Usage
 
-1. Add products with names, serial numbers, and quantity
+- Add products with names, serial numbers, and quantity
 
-2. Scan items using barcode scanner apps
+- Scan items using barcode scanner apps
 
-3. Modify, remove, or multiply items in the list
+- Modify, remove, or multiply items in the list
 
-4. Checkout and generate/print receipts
+- Checkout and generate/print receipts
 
-
+---
 
 # Contributing
 
 **You can contribute by:**
 
-.Submitting pull requests
+- Submitting pull requests
 
-.Forking the repository
+- Forking the repository
 
-.Contacting me on Discord, Telegram, or Email
+- Contacting me on Discord, Telegram, or Email
 
-.Even beginners can fork the repo and make changes easily.
+- Even beginners can fork the repo and make changes easily.
 
+---
 
 # SUPPORT
 
 _**Support me to keep this Repo Up-to-Date by Donating at :**_
-**KO-FI.COM : https://ko-fi.com/hegxib **
-**CRYPTO ETH MetaMask: 0x83Cc0fe051bEf3c8D7633665F165fd9E1AFb10fC**
+
+1. **KO-FI.COM :** https://ko-fi.com/hegxib 
+2. **CRYPTO ETH MetaMask: 0x83Cc0fe051bEf3c8D7633665F165fd9E1AFb10fC**
