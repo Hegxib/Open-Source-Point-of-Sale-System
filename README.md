@@ -3,7 +3,7 @@
 **Hegxib POS** is a lightweight, offline Point of Sale system for PC. Perfect for small shops, supermarkets, or personal projects.  
 ---
 
-Hex. www.hegxib.me/about.html
+  ![HEGXIB](./Hegxib.transp.png)  
    
 ---
 
@@ -150,3 +150,4 @@ _**Support me to keep this Repo Up-to-Date by Donating at :**_
 
 1. **KO-FI.COM :** https://ko-fi.com/hegxib 
 2. **CRYPTO ETH MetaMask: 0x83Cc0fe051bEf3c8D7633665F165fd9E1AFb10fC**
+
